@@ -48,4 +48,18 @@ export function LoginScreen({navigation}: any) {
         value={password}
         onChange={setPasword}
       />
-  
+      <View style={{ marginTop: 10, width: '100%', alignItems: 'center' }}>
+        <CustomButton title={"INICIAR SESIÓN"} onPress={handleLogin} />
+      </View>
+      
+      <View style={{ marginTop: 10, width: '100%', alignItems: 'center' }}>
+        <Text>No tiene cuenta, Cree una ahora</Text>
+        <CustomButton
+          title={"Ir a registrarme"}
+          variant="secondary"
+          onPress={() => navigation.navigate("Register")}
+        />
+      </View>
+    </LoginAndRegisterCard>
+  );
+}

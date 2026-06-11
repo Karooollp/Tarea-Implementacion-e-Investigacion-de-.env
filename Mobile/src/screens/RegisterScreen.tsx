@@ -138,7 +138,7 @@ export default function RegisterScreen({ navigation }: any) {
           user_id: userId,
           first_Name: firstName,
           last_Name: lastName,
-          email,
+          email: email,
           status: "active",
           profileCompleted: false,
         });
